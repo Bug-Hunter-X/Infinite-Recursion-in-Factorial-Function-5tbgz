@@ -1,0 +1,8 @@
+def function(x):
+    if x == 0:
+        return 1
+    else:
+        return x * function(x-1)
+
+print(function(5)) #expect 120
+print(function(-1)) # RecursionError: maximum recursion depth exceeded
